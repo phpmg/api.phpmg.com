@@ -10,7 +10,9 @@
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
         "symfony/lts": "^4@dev",
-        "symfony/yaml": "^4.0"
+        "symfony/yaml": "^4.0",
+        "zendframework/zend-feed": "^2.8",
+        "zendframework/zend-http": "^2.7"
     },
     "require-dev": {
         "symfony/dotenv": "^4.0"
