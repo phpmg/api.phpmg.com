@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
  *
  * @package App\Controller
  */
-class EventsController
+class EventsController extends BaseController
 {
     use JsonCorsTrait;
 
@@ -21,7 +21,7 @@ class EventsController
     {
         try {
             $client = new Client([
-                'base_uri' => 'https://api.meetup.com/php-mg/',
+                'base_uri' => $this->container->getParameter('meetup_url'),
             ]);
             $response = $client->get('events', [
                 'query' => [

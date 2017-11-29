@@ -10,7 +10,7 @@ use Zend\Feed\Reader\Reader;
  *
  * @package App\Controller
  */
-class ArticlesController
+class ArticlesController extends BaseController
 {
     use JsonCorsTrait;
 
@@ -20,7 +20,7 @@ class ArticlesController
     public function indexAction()
     {
         try {
-            $rss = Reader::import('https://medium.com/feed/phpmg-codeshare');
+            $rss = Reader::import($this->container->getParameter('medium_url'));
             $response = [];
 
             foreach ($rss as $item) {
