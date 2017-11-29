@@ -118,5 +118,17 @@
             "version": "4.0",
             "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
         }
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.4.2"
+    },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.0"
     }
 }
