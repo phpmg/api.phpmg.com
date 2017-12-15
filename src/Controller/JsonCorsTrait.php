@@ -18,6 +18,7 @@ trait JsonCorsTrait
 
     protected $headers = [
         'Access-Control-Allow-Origin' => '*',
+        'Content-Encoding' => 'gzip, deflate',
     ];
 
     /**
