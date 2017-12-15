@@ -23,9 +23,9 @@ class DefaultController
             'url' => '/',
             'errors' => [
                 [
-                'type' => 'unknown_error',
-                'message' => 'Unknown error',
-                'parameter_name' => null,
+                    'type' => 'unknown_error',
+                    'message' => 'Unknown error',
+                    'parameter_name' => null,
                 ],
             ],
         ], 404);

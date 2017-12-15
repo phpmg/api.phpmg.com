@@ -30,10 +30,10 @@ class EventsController extends BaseController
                     'status' => 'upcoming,past',
                 ],
             ]);
-
-            return $this->success(\GuzzleHttp\json_decode($response->getBody()));
         } catch (\Exception $e) {
             return $this->error($e->getMessage());
         }
+
+        return $this->success(\GuzzleHttp\json_decode($response->getBody()));
     }
 }

@@ -34,10 +34,10 @@ class ArticlesController extends BaseController
                     'categories' => (array) $item->getCategories(),
                 ];
             }
-
-            return $this->success($response);
         } catch (\Exception $e) {
             return $this->error($e->getMessage());
         }
+
+        return $this->success($response);
     }
 }
